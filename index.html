@@ -88,42 +88,32 @@ footer{flex-direction:column;gap:.5rem}
       <div>
         <div class="eyebrow">Seu dia de praia começa aqui</div>
         <h1 id="page-title">Mais mar.<br><em>Menos preocupação.</em></h1>
-        <p>Seu lugar ao sol começa com um pedido simples. Escolha o dia, o horário e os itens; a gente confirma tudo com você pelo WhatsApp.</p><div class="hero-cta"><a class="hero-button" href="#booking-form">Monte seu pedido <span aria-hidden="true">↓</span></a><span class="hero-hint">Leva menos de 1 minuto</span></div>
+        <p>Seu lugar ao sol começa com um pedido simples. Escolha a data e os itens; a gente confirma tudo com você pelo WhatsApp.</p><div class="hero-cta"><a class="hero-button" href="#booking-form">Monte seu pedido <span aria-hidden="true">↓</span></a><span class="hero-hint">Leva menos de 1 minuto</span></div>
       </div>
       <div class="beach-art" role="img" aria-label="Ilustração de guarda-sol e cadeiras na praia">
         <div class="umbrella" aria-hidden="true"><div class="canopy"></div><div class="pole"></div><div class="chair one"></div><div class="chair two"></div></div><div class="art-caption"><div><strong>Seu refúgio à beira-mar</strong><span>Você cuida do descanso. A gente prepara o conforto.</span></div><span aria-hidden="true">☀</span></div>
       </div>
     </section>
 
-    <section class="perks" aria-label="Como funciona"><div class="perk"><span class="perk-icon" aria-hidden="true">🗓️</span><div><strong>Você escolhe o dia</strong><span>Selecione data e período</span></div></div><div class="perk"><span class="perk-icon" aria-hidden="true">🏖️</span><div><strong>Só o que você precisa</strong><span>Cadeiras e guarda-sóis</span></div></div><div class="perk"><span class="perk-icon" aria-hidden="true">💬</span><div><strong>Confirmação fácil</strong><span>Converse com a gente</span></div></div></section>
+    <section class="perks" aria-label="Como funciona"><div class="perk"><span class="perk-icon" aria-hidden="true">🗓️</span><div><strong>Você escolhe o dia</strong><span>Informe a data da reserva</span></div></div><div class="perk"><span class="perk-icon" aria-hidden="true">🏖️</span><div><strong>Só o que você precisa</strong><span>Cadeiras e guarda-sóis</span></div></div><div class="perk"><span class="perk-icon" aria-hidden="true">💬</span><div><strong>Confirmação fácil</strong><span>Converse com a gente</span></div></div></section>
 
     <section class="booking" aria-label="Pedido de aluguel">
       <form class="form-card" id="booking-form">
-        <div class="form-top"><span class="form-number">01</span><div><h2 class="section-heading">Monte seu pedido</h2><p class="section-subtitle">Informe quando vai retirar e o que gostaria de reservar.</p></div></div>
+        <div class="form-top"><span class="form-number">01</span><div><h2 class="section-heading">Monte seu pedido</h2><p class="section-subtitle">Informe a data da reserva e escolha os itens que gostaria de alugar.</p></div></div>
 
         <div class="field">
           <label for="date">Dia da retirada</label>
           <input id="date" name="date" type="date" required>
         </div>
 
-        <div class="field">
-          <label for="time-slot">Faixa horária</label>
-          <select id="time-slot" name="time-slot" required>
-            <option value="" selected disabled>Selecione um horário</option>
-            <option>Manhã · 08:00 às 12:00</option>
-            <option>Tarde · 12:00 às 16:00</option>
-            <option>Dia todo · 08:00 às 17:00</option>
-          </select>
-        </div>
-
         <fieldset>
           <legend>Itens para alugar</legend>
           <div class="quantity-row">
-            <div class="item-name"><span class="item-icon" aria-hidden="true">🪑</span><div><div class="item-label">Cadeiras</div><div class="item-price" id="chair-unit-price">R$ 10,00 cada</div></div></div>
+            <div class="item-name"><span class="item-icon" aria-hidden="true">🪑</span><div><div class="item-label">Cadeiras</div><div class="item-price" id="chair-unit-price">R$ 20,00 cada</div></div></div>
             <div class="stepper"><button type="button" data-step="-1" data-target="chairs" aria-label="Diminuir quantidade de cadeiras">−</button><input id="chairs" name="chairs" type="number" value="0" min="0" max="20" inputmode="numeric" aria-label="Quantidade de cadeiras"><button type="button" data-step="1" data-target="chairs" aria-label="Aumentar quantidade de cadeiras">+</button></div>
           </div>
           <div class="quantity-row">
-            <div class="item-name"><span class="item-icon" aria-hidden="true">⛱️</span><div><div class="item-label">Guarda-sóis</div><div class="item-price" id="umbrella-unit-price">R$ 20,00 cada</div></div></div>
+            <div class="item-name"><span class="item-icon" aria-hidden="true">⛱️</span><div><div class="item-label">Guarda-sóis</div><div class="item-price" id="umbrella-unit-price">R$ 70,00 cada</div></div></div>
             <div class="stepper"><button type="button" data-step="-1" data-target="umbrellas" aria-label="Diminuir quantidade de guarda-sóis">−</button><input id="umbrellas" name="umbrellas" type="number" value="0" min="0" max="10" inputmode="numeric" aria-label="Quantidade de guarda-sóis"><button type="button" data-step="1" data-target="umbrellas" aria-label="Aumentar quantidade de guarda-sóis">+</button></div>
           </div>
         </fieldset>
@@ -143,7 +133,7 @@ footer{flex-direction:column;gap:.5rem}
       </aside>
     </section>
 
-    <section class="steps" aria-label="Etapas da reserva"><div class="step"><b>1</b><div><strong>Monte seu pedido</strong><span>Escolha data, horário e itens.</span></div></div><div class="step"><b>2</b><div><strong>Envie pelo WhatsApp</strong><span>Confira os detalhes antes de enviar.</span></div></div><div class="step"><b>3</b><div><strong>Aguarde a confirmação</strong><span>Combinamos a disponibilidade com você.</span></div></div></section>
+    <section class="steps" aria-label="Etapas da reserva"><div class="step"><b>1</b><div><strong>Monte seu pedido</strong><span>Escolha a data e os itens.</span></div></div><div class="step"><b>2</b><div><strong>Envie pelo WhatsApp</strong><span>Confira os detalhes antes de enviar.</span></div></div><div class="step"><b>3</b><div><strong>Aguarde a confirmação</strong><span>Combinamos a disponibilidade com você.</span></div></div></section>
 
     <footer><span>Retirada e devolução no mesmo ponto. A reserva só fica confirmada após nosso retorno.</span><span>Feito para dias de sol ☀</span></footer>
   </main>
@@ -152,8 +142,8 @@ footer{flex-direction:column;gap:.5rem}
     // CONFIGURE AQUI antes de publicar: valores em reais e número com código do país, sem +, espaços ou pontuação.
     const CONFIG = {
       whatsappNumber: "5541995161009",
-      chairPrice: 10,
-      umbrellaPrice: 20,
+      chairPrice: 20,
+      umbrellaPrice: 70,
       currency: "BRL"
     };
 
@@ -192,11 +182,11 @@ footer{flex-direction:column;gap:.5rem}
     }
 
     function updateWhatsAppLink(chairs, umbrellas, total) {
-      const slot = document.querySelector("#time-slot").value;
+
       const date = dateInput.value;
       const hasItems = chairs + umbrellas > 0;
       const validNumber = /^\d{10,15}$/.test(CONFIG.whatsappNumber);
-      const valid = Boolean(date && slot && hasItems && validNumber);
+      const valid = Boolean(date && hasItems && validNumber);
       whatsappLink.setAttribute("aria-disabled", String(!valid));
       if (!valid) {
         whatsappLink.href = "#";
@@ -206,7 +196,7 @@ footer{flex-direction:column;gap:.5rem}
       const message = [
         "Olá! Gostaria de consultar a disponibilidade para este pedido:",
         `📅 Data: ${day}/${month}/${year}`,
-        `🕒 Horário: ${slot}`,
+        `🕒 Disponibilidade: Dia todo`,
         `🪑 Cadeiras: ${chairs} × ${money.format(CONFIG.chairPrice)} = ${money.format(chairs * CONFIG.chairPrice)}`,
         `⛱️ Guarda-sóis: ${umbrellas} × ${money.format(CONFIG.umbrellaPrice)} = ${money.format(umbrellas * CONFIG.umbrellaPrice)}`,
         `💰 Total estimado: ${money.format(total)}`,
@@ -232,6 +222,9 @@ footer{flex-direction:column;gap:.5rem}
   </script>
 </body>
 </html>
+
+
+
 
 
 
